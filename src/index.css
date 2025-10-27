@@ -1,0 +1,46 @@
+@source "../node_modules/flowbite";
+@import "tailwindcss";
+@plugin "flowbite-react/plugin/tailwindcss";
+@source "../.flowbite-react/class-list.json";
+
+@font-face{
+    font-family: "Poppins";
+    src: 
+    url("../src/assets/fonts/Poppins-Regular.ttf"),
+    url("../src/assets/fonts/Poppins-Regular.woff"),
+    url("../src/assets/fonts/Poppins-Regular.woff2"),
+    url("../src/assets/fonts/Poppins-Bold.ttf"),
+    url("../src/assets/fonts/Poppins-Bold.woff"),
+    url("../src/assets/fonts/Poppins-Bold.woff2"),
+    url("../src/assets/fonts/Poppins-SemiBold.ttf"),
+    url("../src/assets/fonts/Poppins-SemiBold.woff"),
+    url("../src/assets/fonts/Poppins-SemiBold.woff2");
+}
+
+
+@theme {
+    --color-accent: #EE7C2E;
+    --color-bg: #1F1D0D;
+    --color-primary: #2563EB;
+    --font-poppins: "Poppins";
+}
+
+@layer base {
+  body {
+    @apply bg-repeat bg-cover;
+    background-image: url('./assets/images/main-bg.svg');
+  }
+}
+
+
+
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  
+}
+
+
+
+
