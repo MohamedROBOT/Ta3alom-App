@@ -153,7 +153,6 @@ const Home = () => {
     },
   ];
 
-
   let courseMentors = [
     {
       mentorImg: Emanuel,
@@ -334,7 +333,7 @@ const Home = () => {
       </section>
 
       <section className='px-14.75 py-20 lg:p-20 flex flex-col gap-6 justify-center items-center'>
-     <CoursesSection />
+        <CoursesSection />
       </section>
 
       <section className=' py-20 lg:p-20 flex flex-col gap-6 justify-center items-center'>

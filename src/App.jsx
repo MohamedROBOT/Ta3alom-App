@@ -10,7 +10,12 @@ import BlogDetails from "./components/Blog/BlogDetails"
 import Contact from "./components/Contact/Contact"
 
 
+
 function App() {
+
+
+
+
 const router = createBrowserRouter([
   {
     path: "", element: <Layout />, children: [
@@ -45,6 +50,8 @@ const router = createBrowserRouter([
   return (
    <CourseProvider>
      <RouterProvider router={router} />
+      
+     
    </CourseProvider>
 
   )

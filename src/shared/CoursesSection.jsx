@@ -24,7 +24,6 @@ import { Link } from "react-router-dom";
 
 const CoursesSection = () => {
   const recommendedCourses = useCourses();
-  console.log(recommendedCourses);
   function Rating(rate, size) {
     const fullStars = Math.floor(rate);
     const hasHalfStar = rate % 1 !== 0;
@@ -105,7 +104,7 @@ const CoursesSection = () => {
                   />
                 </picture>
                 <div className='p-3 flex flex-col text-sm gap-y-3'>
-                  <div className='flex items-center flex-wrap gap-6'>
+                  <div className='flex items-center justify-between'>
                     <span className='flex justify-center items-center gap-x-1'>
                       <BookCheckIcon size={20} className='text-accent' />
                       {course.courseLectures}
@@ -119,7 +118,7 @@ const CoursesSection = () => {
                     </span>
                   </div>
                   <h3 className='text-lg text-center font-bold'>
-                    {course.courseName}
+                    {course.courseName.split(" ").slice(0, 2).join(" ")}
                   </h3>
                   <span className='flex items-center gap-x-3'>
                     {Rating(course.courseRate)}
