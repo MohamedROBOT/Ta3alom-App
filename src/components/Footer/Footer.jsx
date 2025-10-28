@@ -6,9 +6,9 @@ import { Link } from "react-router-dom";
 import { Button } from "flowbite-react";
 const Footer = () => {
   return (
-    <NoBgContainer>
+    <div className="px-17.5 pt-17.5">
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-4 lg:place-items-center lg:items-start'>
-        <div className='flex flex-col gap-6'>
+        <div className='flex flex-col gap-6 mb-6'>
           <div className='flex items-center gap-x-3'>
             <img src={MainLogo} alt='Ta3alom' />
             <div>
@@ -94,8 +94,32 @@ const Footer = () => {
             Call Us!
           </Button>
         </div>
+
+    
       </div>
-    </NoBgContainer>
+
+          <div className="flex justify-center items-center mt-6 py-6 px-6 border-t border-gray-300 text-gray-500 text-sm">
+  <span>© 2025 All rights reserved by&nbsp;</span>
+  <a
+    href="https://www.linkedin.com/in/muhammed-ahmed-8a29a3202/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-accent hover:underline font-semibold hover:text-accent/80 transition-colors duration-300"
+  >
+    Mohamed
+  </a>
+  <span>&nbsp;&amp;&nbsp;</span>
+  <a
+    href="https://www.linkedin.com/in/norhan-ahmed-2b93211b5/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-accent hover:underline font-semibold hover:text-accent/80 transition-colors duration-300"
+  >
+    Norhan
+  </a>
+</div>
+
+    </div>
   );
 };
 
