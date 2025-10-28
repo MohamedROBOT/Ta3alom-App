@@ -8,6 +8,7 @@ import CourseDetails from "./components/Courses/CourseDetails"
 import Blog from "./components/Blog/Blog"
 import BlogDetails from "./components/Blog/BlogDetails"
 import Contact from "./components/Contact/Contact"
+import Auth from "./components/Auth/Auth"
 
 
 
@@ -39,6 +40,9 @@ const router = createBrowserRouter([
       },
       {
         path: "contact", element: <Contact />
+      },
+      {
+        path: "auth", element: <Auth />
       },
       {
         path:"*" , element: <h1>404 Not Found</h1>
